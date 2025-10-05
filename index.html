@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Bloom Bakery</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@100&family=Cormorant+Garamond:wght@400&display=swap"
+        rel="stylesheet">
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header id="page-header" class="hero-header">
+        <div class="hero-overlay">
+          <h1>Alpine Bloom Bakery</h1>
+          <nav>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+    <section id="menu" class="menu">
+        <h2 id="menu-title">Our Cupcakes</h2>
+        <div class="menu-grid">
+
+            <div class="cupcake">
+                <img src="images/pistachio.jpg"
+                    alt="Salted Caramel Pistachio">
+                <h3>Salted Caramel Pistachio</h3>
+                <p>A tender brown sugar cupcake filled with creamy white chocolate pistachio ganache, topped with a
+                    swirl of pistachio buttercream and salted caramel buttercream.</p>
+            </div>
+
+            <div class="cupcake">
+                <img src="images/pancake.jpg"
+                    alt="Blueberry Maple Pancake">
+                <h3>Blueberry Maple Pancake</h3>
+                <p>A fluffy maple cupcake filled with homemade blueberry curd, topped with maple and blueberry
+                    buttercreams, a stack of mini pancake, and a drizzle of maple syrup.</p>
+            </div>
+
+            <div class="cupcake">
+                <img src="images/raspberry.jpg"
+                    alt="Raspberry White Chocolate">
+                <h3>Raspberry White Chocolate</h3>
+                <p>A white chocolate cupcake filled with homemade raspberry jam, topped with white chocolate and
+                    raspberry buttercream swirls.</p>
+            </div>
+
+            <div class="cupcake">
+                <img src="images/chai.jpg"
+                    alt="Salted Caramel Chai">
+                <h3>Salted Caramel Chai</h3>
+                <p>A spiced cinnamon cupcake filled with chai custard, topped with chai and salted caramel buttercream.
+                </p>
+            </div>
+
+            <div class="cupcake">
+                <img src="images/lemon.jpg"
+                    alt="Lemon Lavender Berry">
+                <h3>Lemon Lavender Berry</h3>
+                <p>A bright lemon cupcake filled with tangy mixed berry curd, topped with swirls of lemon and berry
+                    buttercream.</p>
+            </div>
+
+            <div class="cupcake">
+                <img src="images/apple.jpg"
+                    alt="Cinnamon Maple Cider">
+                <h3>Cinnamon Maple Cider</h3>
+                <p>A spiced cupcake filled with a salted caramel and cream cheese, topped with spiced cinnamon and maple
+                    buttercreams.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p class="contact-intro">
+          Have a question or want to order custom cupcakes? Send us a message below!
+        </p>
+      
+        <form action="https://formspree.io/f/mblzkgyl" method="POST" class="contact-form">
+          <label>
+            Name<br>
+            <input type="text" name="name" required>
+          </label>
+      
+          <label>
+            Email<br>
+            <input type="email" name="_replyto" required>
+          </label>
+      
+          <label>
+            Message<br>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+      
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+
+    <footer>
+        &copy; 2025 Alpine Bloom Bakery
+    </footer>
+
+    <!-- Link to external JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
