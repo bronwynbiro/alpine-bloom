@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ca">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpine Bloom Bakery</title>
+    <title>Alpine Bloom Bakery | Custom Cupcakes in Banff</title>
+    <meta name="description"
+        content="Alpine Bloom Bakery in Banff crafts custom cupcakes with unique flavours and filled centres. Perfect for birthdays, weddings, and special occasions.">
+    <meta name="keywords"
+        content="Banff cupcakes, custom cupcakes Banff, Banff dessert, filled cupcakes, Alpine Bloom Bakery, Canadian bakery">
 
     <!-- Google Fonts -->
     <link
@@ -19,63 +23,88 @@
 
     <header id="page-header" class="hero-header">
         <div class="hero-overlay">
-          <h1>Alpine Bloom Bakery</h1>
-          <nav>
-            <a href="#menu">Menu</a>
-            <a href="#contact">Contact</a>
-          </nav>
+            <h1>Alpine Bloom Bakery</h1>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-      </header>
+    </header>
+
+    <section class="hero-about-section">
+        <div class="hero-about-container">
+            <div class="hero-image">
+                <img src="images/alpinebloom.jpg" alt="Custom cupcakes at Alpine Bloom Bakery in Banff">
+            </div>
+            <div class="about-info">
+                <h2>About</h2>
+                <p>
+                    Alpine Bloom Bakery creates handcrafted <b>custom cupcakes in Banff</b> using the finest
+                    local ingredients.
+                    From classic favourites to inventive filled cupcakes, every treat is designed to delight your taste
+                    buds.
+                </p>
+                <p>
+                    Located in the heart of Banff, we specialise in <strong>custom cupcake orders</strong> for
+                    birthdays, weddings, and special events.
+                    Each creation is unique, just like the occasion it celebrates.
+                </p>
+                <ul>
+                    <li>Filled cupcakes & unique flavours</li>
+                    <li>Made locally in Banff</li>
+                    <li>Custom orders & free local delivery</li>
+                </ul>
+                <p>
+                    More than just dessert, our cupcakes are a small celebration, a moment of joy, and a piece of edible
+                    art you can savour.
+                </p>
+            </div>
+        </div>
+    </section>
 
     <section id="menu" class="menu">
-        <h2 id="menu-title">Our Cupcakes</h2>
+        <h2>Our Cupcakes</h2>
         <div class="menu-grid">
 
             <div class="cupcake">
-                <img src="images/pistachio.jpg"
-                    alt="Salted Caramel Pistachio">
+                <img src="images/pistachio.jpg" alt="Salted Caramel Pistachio cupcake">
                 <h3>Salted Caramel Pistachio</h3>
-                <p>A tender brown sugar cupcake filled with creamy white chocolate pistachio ganache, topped with a
-                    swirl of pistachio buttercream and salted caramel buttercream.</p>
+                <p>A tender brown sugar cupcake filled with creamy white chocolate pistachio ganache, topped with
+                    pistachio and salted caramel buttercream.</p>
             </div>
 
             <div class="cupcake">
-                <img src="images/pancake.jpg"
-                    alt="Blueberry Maple Pancake">
+                <img src="images/pancake.jpg" alt="Blueberry Maple Pancake cupcake">
                 <h3>Blueberry Maple Pancake</h3>
                 <p>A fluffy maple cupcake filled with homemade blueberry curd, topped with maple and blueberry
-                    buttercreams, a stack of mini pancake, and a drizzle of maple syrup.</p>
+                    buttercreams, a stack of mini pancakes, and a drizzle of maple syrup.</p>
             </div>
 
             <div class="cupcake">
-                <img src="images/raspberry.jpg"
-                    alt="Raspberry White Chocolate">
+                <img src="images/raspberry.jpg" alt="Raspberry White Chocolate cupcake">
                 <h3>Raspberry White Chocolate</h3>
                 <p>A white chocolate cupcake filled with homemade raspberry jam, topped with white chocolate and
                     raspberry buttercream swirls.</p>
             </div>
 
             <div class="cupcake">
-                <img src="images/chai.jpg"
-                    alt="Salted Caramel Chai">
+                <img src="images/chai.jpg" alt="Salted Caramel Chai cupcake">
                 <h3>Salted Caramel Chai</h3>
                 <p>A spiced cinnamon cupcake filled with chai custard, topped with chai and salted caramel buttercream.
                 </p>
             </div>
 
             <div class="cupcake">
-                <img src="images/lemon.jpg"
-                    alt="Lemon Lavender Berry">
+                <img src="images/lemon.jpg" alt="Lemon Lavender Berry cupcake">
                 <h3>Lemon Lavender Berry</h3>
                 <p>A bright lemon cupcake filled with tangy mixed berry curd, topped with swirls of lemon and berry
                     buttercream.</p>
             </div>
 
             <div class="cupcake">
-                <img src="images/apple.jpg"
-                    alt="Cinnamon Maple Cider">
+                <img src="images/apple.jpg" alt="Cinnamon Maple Cider cupcake">
                 <h3>Cinnamon Maple Cider</h3>
-                <p>A spiced cupcake filled with a salted caramel and cream cheese, topped with spiced cinnamon and maple
+                <p>A spiced cupcake filled with salted caramel and cream cheese, topped with spiced cinnamon and maple
                     buttercreams.</p>
             </div>
 
@@ -85,35 +114,33 @@
     <section id="contact" class="contact-section">
         <h2>Contact Us</h2>
         <p class="contact-intro">
-          Have a question or want to order custom cupcakes? Send us a message below!
+            Have a question or want to order custom cupcakes in Banff? Send us a message below!
         </p>
-      
+
         <form action="https://formspree.io/f/mblzkgyl" method="POST" class="contact-form">
-          <label>
-            Name<br>
-            <input type="text" name="name" required>
-          </label>
-      
-          <label>
-            Email<br>
-            <input type="email" name="_replyto" required>
-          </label>
-      
-          <label>
-            Message<br>
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-      
-          <button type="submit">Send Message</button>
+            <label>
+                Name<br>
+                <input type="text" name="name" required>
+            </label>
+
+            <label>
+                Email<br>
+                <input type="email" name="_replyto" required>
+            </label>
+
+            <label>
+                Message<br>
+                <textarea name="message" rows="4" required></textarea>
+            </label>
+
+            <button type="submit">Send Message</button>
         </form>
-      </section>
+    </section>
 
     <footer>
-        &copy; 2025 Alpine Bloom Bakery
+        &copy; 2025 Alpine Bloom Bakery | Custom Cupcakes in Banff
     </footer>
 
-    <!-- Link to external JS -->
-    <script src="script.js"></script>
 </body>
 
 </html>
