@@ -8,163 +8,253 @@
     align-items: center;
     text-align: center;
     background: url('images/banner.jpg') center/cover no-repeat;
-  }
-  
-  .hero-header::before {
+}
+
+.hero-header::before {
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.4);
     z-index: 1;
-  }
-  
-  .hero-header h1,
-  .hero-header nav {
+}
+
+.hero-header h1,
+.hero-header nav {
     position: relative;
     z-index: 2;
-  }
-  
-  .hero-header h1 {
+}
+
+.hero-header h1 {
     font-size: 3.5rem;
     font-family: 'Cinzel', serif;
     font-weight: 300;
-    color:  #fdf6f0;
+    color: #fdf6f0;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 1rem;
-  }
-  
-  .hero-header nav a {
+}
+
+.hero-header nav a {
     text-decoration: none;
     margin: 0 1.5rem;
     font-weight: 500;
-    color: #ffffff; 
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     font-size: 1.1rem;
     transition: color 0.2s, transform 0.2s;
-  }
-  
-  .hero-header nav a:hover {
-    color: #b07f56; /* lighter brown highlight */
+}
+
+.hero-header nav a:hover {
+    color: #b07f56;
     transform: scale(1.05);
-  }
-  
-  /* Body */
-  body {
+}
+
+.hero-about-section {
+    padding: 40px 20px;
+}
+
+.hero-about-container {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: flex-start;
+    /* aligns text with top of image */
+    flex-wrap: wrap;
+    /* allows stacking on smaller screens */
+}
+
+/* Hero Image (shorter and responsive) */
+.hero-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* About Info */
+.about-info {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-info p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.about-info ul {
+    list-style: disc inside;
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.about-info .cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #d94f3d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.about-info .cta-button:hover {
+    background-color: #b03b2e;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .hero-about-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-info {
+        padding-top: 20px;
+    }
+
+    .hero-image img {
+        max-height: 300px;
+        /* smaller height on mobile */
+    }
+}
+
+/* Body */
+body {
     margin: 0;
     font-family: 'Cormorant Garamond', serif;
     background-color: #fffaf8;
     color: #333;
     line-height: 1.6;
-  }
-  
-  /* Background Overlay */
-  body::before {
+}
+
+/* Background Overlay */
+body::before {
     content: "";
     position: fixed;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: url('https://images.unsplash.com/vector-1752298995692-c384adead2d0?q=80&w=1160&auto=format&fit=crop') no-repeat center/cover;
     opacity: 0.05;
     z-index: -1;
-  }
-  
-  /* Headings */
-  h1, h2, h3 {
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
     font-family: 'Cinzel', serif;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #3a2b1e; /* unified brown */
-  }
-  
-  /* Menu Section */
-  .menu {
+    color: #d94f3d;
+}
+
+/* Menu Section */
+.menu {
     max-width: 1100px;
     margin: 3rem auto 5rem;
     padding: 0 1rem;
-  }
-  
-  .menu h2 {
+}
+
+.menu h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-  }
-  
-  .menu-grid {
+}
+
+.menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2.5rem;
-  }
-  
-  /* Cupcakes */
-  .cupcake {
+}
+
+/* Cupcakes */
+.cupcake {
     background-color: #fff;
     border-radius: 25px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
     text-align: center;
     transition: transform 0.6s ease-out, box-shadow 0.3s;
-  }
-  
-  .cupcake:hover {
+}
+
+.cupcake:hover {
     transform: translateY(-12px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.15);
-  }
-  
-  .cupcake img {
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+
+.cupcake img {
     width: 100%;
     height: 240px;
     object-fit: cover;
     border-bottom: 2px solid #ffe6f0;
     transition: transform 0.3s;
-  }
-  
-  .cupcake:hover img {
+}
+
+.cupcake:hover img {
     transform: scale(1.05);
-  }
-  
-  .cupcake h3 {
+}
+
+.cupcake h3 {
     margin: 0.75rem 1.5rem;
     font-size: 1.5rem;
-  }
-  
-  .cupcake p {
+    color: #7B5E3C;
+}
+
+.cupcake p {
     padding: 0 1.25rem 1.25rem;
     font-size: 1rem;
     color: #555;
-  }
-  
-  /* Contact Section */
-  .contact-section {
+}
+
+/* Contact Section */
+.contact-section {
     max-width: 700px;
     margin: 4rem auto 2rem;
     padding: 0 1rem;
     text-align: center;
-  }
-  
-  .contact-section h2 {
+}
+
+.contact-section h2 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
-    color: #3a2b1e;
-  }
-  
-  .contact-intro {
+    color: #d94f3d;
+}
+
+.contact-intro {
     font-size: 1.05rem;
     margin-bottom: 1.5rem;
     color: #444;
-  }
-  
-  .contact-form {
+}
+
+.contact-form {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: stretch;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
+}
+
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 0.7rem 1rem;
     border: 1px solid #ddd;
@@ -172,17 +262,18 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 1rem;
     background-color: #fffaf8;
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
     outline: none;
     border-color: #b07f56;
     box-shadow: 0 0 4px rgba(176, 127, 86, 0.2);
-  }
-  
-  .contact-form button {
-    background-color: #3a2b1e; /* brown button */
+}
+
+.contact-form button {
+    background-color: #d94f3d;
+    /* brown button */
     color: white;
     border: none;
     border-radius: 8px;
@@ -195,20 +286,82 @@
     display: block;
     margin: 1.5rem auto 0;
     font-size: 1.1rem;
-  }
-  
-  .contact-form button:hover {
+}
+
+.contact-form button:hover {
     background-color: #b07f56;
     transform: translateY(-2px);
+}
+
+.pricing-section {
+    max-width: 600px; /* narrower for better focus */
+    margin: 4rem auto;
+    padding: 0 20px;
+    text-align: center; /* centers headings, paragraphs, and list */
+    font-family: 'Cormorant Garamond', serif;
   }
   
-  /* Footer */
-  footer {
+  .pricing-section h2 {
+    font-size: 2.5rem;
+    color: #d94f3d;
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #555;
+  }
+  
+  .pricing-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2rem; /* center with auto margins */
+    display: inline-block; /* allows the list to shrink to content width */
+    text-align: left; /* list items still left-aligned inside */
+    font-size: 1.2rem;
+    color: #d94f3d;
+  }
+  
+  .pricing-list li {
+    padding: 12px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .pricing-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .pricing-list strong {
+    color: #d94f3d;
+  }
+  
+  .pricing-note {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-section h2 {
+      font-size: 2rem;
+    }
+  
+    .pricing-list {
+      font-size: 1rem;
+    }
+  
+    .pricing-list li {
+      padding: 10px 15px;
+    }
+  }  
+
+/* Footer */
+footer {
     text-align: center;
     padding: 1.5rem;
     font-size: 0.95rem;
-    color: #3a2b1e;
+    color: #d94f3d;
     background-color: #f9eee9;
     margin-top: 3rem;
-  }
-  
+}
